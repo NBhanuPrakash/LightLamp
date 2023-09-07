@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>light lamp</title>
+    <link rel="stylesheet" href="lightlamp.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navigation">
+          <nav>
+            <div class="title">
+              <h1>vue<span>lamp</span></h1>
+            </div>
+
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Modern</a></li>
+              <li><a href="#">Contemprary</a></li>
+              <li><a href="#">latestTechs</a></li>
+              <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            </ul>
+          </nav>
+        </div>
+        <div class="light">
+            <img src="lamp.png" class="lamp">
+            <img src="light.png" class="light" id="light">
+            <div class="text-con">
+                <h1>Latest in <span>Lighting...</span></h1>
+                <p>This is the first lamp from our company. we're making a huge collection of modern lamps in all categaries from home us to office</p>
+                <a href="#">Check All Collection</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+  </body>
+</html>
